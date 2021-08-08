@@ -30,7 +30,7 @@ struct WeekdayCircle: View {
         }
         .accessibilityLabel(day.name)
         .accessibilityAddTraits(.isButton)
-        .accessibilityAddTraits(isEnabled ? .isSelected : .isButton)
+        .accessibilityAddTraits(isEnabled ? .isSelected : [])
     }
     
     func toggleDay() {
