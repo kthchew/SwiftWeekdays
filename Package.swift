@@ -5,11 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftWeekdays",
+    platforms: [.iOS(.v14)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "SwiftWeekdays",
-            targets: ["SwiftWeekdays"]),
+            targets: ["SwiftWeekdays"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -23,6 +24,6 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "SwiftWeekdaysTests",
-            dependencies: ["SwiftWeekdays"]),
+            dependencies: ["SwiftWeekdays"])
     ]
 )
